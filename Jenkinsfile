@@ -27,5 +27,10 @@ echo $PATH'''
         git(url: 'https://github.com/williamyao1982/verification.git', poll: true, branch: 'master')
       }
     }
+    stage('final check') {
+      steps {
+        sh 'pwd'
+      }
+    }
   }
 }
