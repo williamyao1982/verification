@@ -24,7 +24,7 @@ echo $PATH'''
     }
     stage('Verification') {
       steps {
-        git 'https://github.com/williamyao1982/verification.git'
+        git(url: 'https://github.com/williamyao1982/verification.git', poll: true, branch: 'master')
       }
     }
   }
