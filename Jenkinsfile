@@ -9,7 +9,7 @@ echo $PATH'''
     }
     stage('Preparation') {
       steps {
-        sh 'echo "Preparation"'
+        git(poll: true, url: 'https://github.com/williamyao1982/verification.git', branch: 'master')
       }
     }
     stage('deployLeopard4') {
@@ -24,7 +24,7 @@ echo $PATH'''
     }
     stage('Verification') {
       steps {
-        git(url: 'https://github.com/williamyao1982/verification.git', poll: true, branch: 'master')
+        sh 'echo "python"'
       }
     }
     stage('final check') {
