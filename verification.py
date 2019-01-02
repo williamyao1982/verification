@@ -1,7 +1,11 @@
 #!/usr/bin/python
-# -*- coding: UTF-8 -*-
+# encoding=utf8
 import requests
 from bs4 import BeautifulSoup
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 openFile = "verification.txt"
 f = open(openFile,"r")
