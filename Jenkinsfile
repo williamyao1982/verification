@@ -25,7 +25,7 @@ echo $PATH'''
     stage('Verification') {
       steps {
         sh 'echo "python"'
-        sh 'python --version'
+        sh 'python ./verification.py'
       }
     }
     stage('final check') {
