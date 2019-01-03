@@ -25,9 +25,9 @@ for line in lines:
     soup = BeautifulSoup(html, features='lxml')
     verName = soup.find_all('div', {'style': 'color: #B33A3B; border-left: 1px solid #FFFFFF;'})
     for i in verName:
-        print(i.get_text())
+        #print(i.get_text())
         if version in i.get_text():
             print "%s is True" % val2
         else:
-            print "%s is False" % val1
+            raise Exception("The version of the website %s is incorrect." % val2)
 f.close()

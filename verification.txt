@@ -6,4 +6,4 @@ Version 3.27.2,https://patac.control-tec.cn/login.action
 Version 3.27.2,https://sales.control-tec.cn/login.action
 Version 3.27.2,https://gac.control-tec.cn/login.action
 Version 3.27.2,https://ghac.control-tec.cn/login.action
-Version 3.27.2,https://changan.control-tec.cn/login.action
+Version 3.27.1,https://changan.control-tec.cn/login.action
