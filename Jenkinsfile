@@ -9,7 +9,7 @@ echo $PATH'''
     }
     stage('Preparation') {
       steps {
-        git(poll: true, url: 'https://github.com/williamyao1982/verification.git', branch: 'master')
+        git(poll: true, url: 'https://stash.it.control-tec.com:8443/scm/it/cn_deploymentweb.git', branch: 'master')
       }
     }
     stage('deployLeopard4') {
